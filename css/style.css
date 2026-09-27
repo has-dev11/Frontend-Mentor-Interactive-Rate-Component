@@ -1,0 +1,119 @@
+@import url("./fonts.css");
+
+:root {
+
+    --Orange-500: hsl(25, 97%, 53%);
+
+    --White: hsl(0, 100%, 100%);
+    --Grey-500: hsl(217, 12%, 63%);
+    --Grey-900: hsl(213, 19%, 18%);
+    --Grey-950: hsl(216, 12%, 8%);
+
+    font-size: 15px;
+    font-family: "Overpass";
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--Grey-950);
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 325px;
+    background-color: var(--Grey-900);
+    background: linear-gradient(to top, hsla(213, 19%, 18%, 0.4), hsla(213, 19%, 18%, 1));
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 10px;
+}
+#rate-card .star {
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--Grey-900);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--White);
+}
+.card p {
+    color: var(--Grey-500);
+    font-size: 0.8rem;
+    text-align: center;
+}
+.card form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.card form .rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+.card form .rating button {
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--Grey-900);
+    color: var(--Grey-500);
+    border: none;
+    font-family: inherit;
+}
+.card form .rating button:hover {
+    background-color: var(--Orange-500);
+    color: var(--Grey-950);
+}
+.card form .rating button.ch {
+    background-color: var(--White);
+    color: var(--Grey-950);
+}
+.card form .submit {
+    width: 90%;
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--Orange-500);
+    font-size: 1rem;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--Grey-950);
+}
+.card form .submit:hover,
+.card form .submit:active {
+    background-color: var(--White);
+}
+#thanks-card {
+    display: none;
+    align-items: center;
+}
+.your-rate {
+    background-color: var(--Grey-900);
+    font-size: 0.8rem;
+    color: var(--Grey-500);
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
+}

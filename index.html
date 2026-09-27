@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; color: white}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="card" id="rate-card">
+    <div class="star">
+      <img src="./assets/images/icon-star.svg" alt="Star icon">
+    </div>
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    <form action="" method="POST" id="rate-form">
+      <div class="rating">
+        <button type="button" class="rate-button">1</button>
+        <button type="button" class="rate-button">2</button>
+        <button type="button" class="rate-button">3</button>
+        <button type="button" class="rate-button">4</button>
+        <button type="button" class="rate-button">5</button>
+      </div>
+      <button class="submit" type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="card" id="thanks-card">
+    <img src="./assets/images/illustration-thank-you.svg" alt="the image is about sending form">
+    <div class="your-rate">You selected  <span id="rate">1</span>  out of 5</div>
+    <h1>Thank you!</h1>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+  </div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Hassan Al-Kareem</a>.
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>
